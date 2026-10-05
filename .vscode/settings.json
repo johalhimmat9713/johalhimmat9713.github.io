@@ -1,0 +1,9 @@
+{
+  "remote.autoForwardPorts": true,
+  "remote.portsAttributes": {
+    "8000": {
+      "label": "Plumbing website",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}

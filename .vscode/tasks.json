@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Preview website in browser",
+      "type": "process",
+      "command": "python3",
+      "args": ["-m", "http.server", "8000", "--bind", "0.0.0.0"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "website-preview",
+        "pattern": {
+          "regexp": "^Serving HTTP on .* port 8000"
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "^Serving HTTP on .* port 8000",
+          "endsPattern": "^$"
+        }
+      }
+    }
+  ]
+}
